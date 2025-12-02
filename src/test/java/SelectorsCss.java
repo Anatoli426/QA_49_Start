@@ -18,7 +18,7 @@ public class SelectorsCss {
         driver.get("https://telranedu.web.app/home");
         WebElement btnAbout = driver.findElement(By.cssSelector("a[href='/about']"));
         btnAbout.click();
-        pause(2);
+        pause(3);
         System.out.println(btnAbout.getText());
         WebElement btnLogin = driver.findElement(
                 By.cssSelector("div[id='root'] a:last-child"));
