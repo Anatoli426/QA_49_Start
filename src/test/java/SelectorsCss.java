@@ -29,7 +29,7 @@ public class SelectorsCss {
         inputEmail.sendKeys("anatolii@gmail.com");
         WebElement inputPassword = driver.findElement(
                 By.cssSelector("*[placeholder='Password']"));
-        inputPassword.sendKeys("At123456$$");
+        inputPassword.sendKeys("At123456$");
         WebElement btnLoginForm = driver.findElement(
                 By.cssSelector("form>button[name='login']"));
         btnLoginForm.click();
@@ -92,11 +92,13 @@ public class SelectorsCss {
 
     }
 
-    static void pause(int time){
+    static void pause(int time) {
         try {
-            Thread.sleep(time *1000L);
+            Thread.sleep(time * 1000L);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
     }
+
+
 }
